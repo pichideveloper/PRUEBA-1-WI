@@ -8,6 +8,7 @@ import repository.CategoriaRepository;
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class CategoriaService {
 
 
@@ -46,5 +47,8 @@ public class CategoriaService {
 
    public void eliminar(Long id) {
        categoriaRepository.deleteById(id);
+   }
+   public boolean existePorId(Long id) {
+    return categoriaRepository.existsById(id);
    }
 }

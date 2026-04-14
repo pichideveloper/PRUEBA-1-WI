@@ -19,4 +19,7 @@ public class Categoria {
 
    @Column(nullable = false, unique = true)
    private String nombre;
+
+   @Column
+   private String descripcion;
 }
